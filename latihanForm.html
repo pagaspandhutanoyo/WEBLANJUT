@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Latihan Form</title>
+</head>
+<body>
+	<form action="prosesLatihanForm.php" method="post" name="input">
+		<table>
+			<tr>
+				<td>NIM</td>
+				<td>:</td>
+				<td><input type="text" name="nim" size="14"></td>
+			</tr>
+			<tr>
+				<td>Program Studi</td>
+				<td>:</td>
+				<td>
+					<select name="prodi">
+						<option value="Teknik Informatika">Teknik Informatika</option>
+						<option value="Sistem Informasi">Sistem Informasi</option>
+						<option value="Akuntasi">Akuntansi</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Nilai Tugas</td>
+				<td>:</td>
+				<td><input type="number" min="0" max="100" name="nilaiTugas"></td>
+			</tr>
+			<tr>
+				<td>Nilai UTS</td>
+				<td>:</td>
+				<td><input type="number" min="0" max="100" name="nilaiUTS"></td>
+			</tr>
+			<tr>
+				<td>Nilai UAS</td>
+				<td>:</td>
+				<td><input type="number" min="0" max="100" name="nilaiUAS"></td>
+			</tr>
+			<tr>
+				<td>Catatan Khusus</td>
+				<td>:</td>
+				<td>
+					<input type="checkbox" name="note1" value="Kehadiran >= 70%" checked>Kehadiran >= 70%
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>
+					<input type="checkbox" name="note2" value="Interaktif di Kelas">Interaktif di Kelas
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>
+					<input type="checkbox" name="note3" value="Tidak terlambat mengumpulkan tugas">Tidak terlambat mengumpulkan tugas
+				</td>
+			</tr>
+			<tr>
+				<td colspan ="3">
+					<center><input type="submit" name="Simpan" value="Simpan"></center>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

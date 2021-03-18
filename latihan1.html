@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Latihan1</title>
+</head>
+<body>
+    <form action="prosesinput.php" method="post" name="input">
+        <tabel>
+            <fieldset>
+            <tr>
+                <td>nim </td>
+                <td>:</td>
+                <td><input type="text" name="nim"  /></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Program Studi :</td>
+                <select name="Prodi">
+                    <option value="TI">Teknik Informatika</option>
+                    <option value="SI">Sistem Informasi</option>
+                    <option value="DKV">DKV</option>
+                    <option value="ILKOM">Ilmu Komunikasi</option>
+                </select>
+            <br>
+            </tr>
+            <tr>
+                <td> Nilai tugas :</td>
+                <input type="number" min="0" max="100" name="nilaiTugas"><br>
+            </tr>
+            
+            
+            <tr>
+                <td> Nilai UTS :</td>
+                <input type="number" min="0" max="100" name="nilaiUTS"><br>
+            </tr>
+           
+        
+            <tr>
+                <td> Nilai UAS :</td>
+                <input type="number" min="0" max="100" name="nilaiUAS"><br>
+            </tr>
+            <tr>
+				<td>Catatan Khusus</td>
+				<td>:</td>
+				<td>
+					<input type="checkbox" name="note1" value="Kehadiran >= 70%" checked>Kehadiran >= 70%
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>
+					<input type="checkbox" name="note2" value="Interaktif di Kelas">Interaktif di Kelas
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>
+					<input type="checkbox" name="note3" value="Tidak terlambat mengumpulkan tugas">Tidak terlambat mengumpulkan tugas
+				</td>
+            <tr>
+                <td colspan="3">
+                    <center><input type="submit" name="Simpan" value="Simpan"></center>
+                </td>
+            </tr>
+            </fieldset>
+        </tabel>
+    </form>
+</body>
+</html>
+
